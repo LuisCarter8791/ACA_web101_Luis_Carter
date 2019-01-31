@@ -1,0 +1,24 @@
+h1 {
+    width: 60%;
+    margin: 5% auto;
+}
+body {
+    color: white;
+}
+main {
+    width: 60%;
+    margin: 5% auto;
+    background: pink;
+}
+article{
+    margin: 1% auto;
+    border: 2px solid grey;
+    width: 60%;
+    background: black;
+}
+article:hover {
+    background: grey;
+}
+article:hover > h3 {
+    color: blue;
+}
