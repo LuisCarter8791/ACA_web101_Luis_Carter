@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -26,33 +25,6 @@ body {
     position: relative;
 }
 
-div.port-btn {
-    position: fixed;
-    top: 100px;
-}
-
-.port-btn,
-.port-btn:visited {
-    text-transform: uppercase;
-    text-decoration: none;
-    /* padding: 5px 40px; */
-    border-radius: 100px;
-    transition: all .2s;
-    
-}
-
-.port-btn {
-    background-color: #fff;
-    color: #777;
-}
-
-.port-btn:hover {
-    transform: translateY(-3px);
-}
-
-.port-btn:active {
-    transform: translateY(-1);
-}
 
 .logo-box {
     position: absolute;
@@ -71,26 +43,10 @@ div.port-btn {
     font-size: 30px;
     letter-spacing: 0px;
     position: absolute;
-    top: 50%;
-    left: 30%;
-    transform: translate(-50%, -50%);
-    animation-name: moveInLeft;
-    animation-duration: 1s;
-    backface-visibility: hidden;
+    top: 270px;
+    left: 350px;
 }
- @keyframes moveInLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-100px);
-    }
-    80% {
-        transform: translateX(10px);
-    }
-    100% {
-        opacity: 1;
-        transform: translate(0);
-    }
-} 
+ 
 
 .heading-primary-main {
     display: block;
@@ -99,7 +55,7 @@ div.port-btn {
     font-weight: 200px;
     position: absolute;
     top: 50%;
-    left: 30%;
+    left: 270px;
     transform: translate(-50%, 30%);
     animation-name: moveInRight;
 }
@@ -120,13 +76,29 @@ button {
     letter-spacing: 16px;
     font-style: italic;
     position: relative;
-    top: 325px;
-    left: 225px;
+    top: 290px;
+    left: 300px;
 
   }
   nav {
       position: relative;
       top: 25px;
-      left: 925px;
+      left: 750px;
       
+  }
+
+  nav > a {
+    margin: 3% auto;
+    width: 25%;
+    height: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border-radius: 15px;
+    background: transparent;
+    padding: 5px; 
+    /* padding-bottom: 5%; */
+    text-align: center;
+    color: white;
+    letter-spacing: 16px;
+    font-style: italic;
   }
