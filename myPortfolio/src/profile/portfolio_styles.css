@@ -102,3 +102,13 @@ button {
     letter-spacing: 16px;
     font-style: italic;
   }
+  @media screen and (max-width: 760px) {
+    .animate {
+        position: absolute;
+        
+      }
+    .btn {
+        position: absolute;
+      
+    }
+  }
