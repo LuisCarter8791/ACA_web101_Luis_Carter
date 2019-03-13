@@ -1,109 +1,80 @@
-body {
-  margin: 0;
-  font-family: arial;
-}
-#gameBoard {
-  position: absolute;
-  left: 500px;
-  top: 200px;
-  height: 150px;
-  width:  150px;
-  display: grid;
-  grid-gap: 1px;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto auto;
-  grid-template-areas: 
 
-  "box1 box2 box3"
-  "box4 box5 box6"
-  "box7 box8 box9";
-
-}
-#topLeft {
-  height: 50px;
-  width: 50px;
-  background: blue;
- 
-  border-width: 2px;
-  grid-area: box1;
-}
-#topMid {
-    height: 50px;
-  width: 50px;
-  background: blue;
-  
-  border-width: 2px;
-  grid-area:box2;
-}
-#topRight {
-    height: 50px;
-  width: 50px;
-  background: blue;
-  
-  border-width: 2px;
-  grid-area: box3;
-}
-#midLeft {
-    height: 50px;
-  width: 50px;
-  background: blue;
-  
-  border-width: 2px;
-  grid-area: box4;
-}
-#center {
-    height: 50px;
-  width: 50px;
-  background: blue;
-  
-  border-width: 2px;
-  grid-area: box5;
-}
-#midRight {
-    height: 50px;
-  width: 50px;
-  background: blue;
-  
-  border-width: 2px;
-  grid-area: box6;
-}
-#botLeft {
-    height: 50px;
-  width: 50px;
-  background: blue;
-  
-  border-width: 2px;
-  grid-area: box7;
-}
-#botMid {
-    height: 50px;
-  width: 50px;
-  background: blue;
-  
-  border-width: 2px;
-  grid-area: box8;
-}
-#botRight {
-    height: 50px;
-  width: 50px;
-  background: blue;
- 
-  border-width: 2px;
-  grid-area: box9;
-}
-#gameBoard:hover {
-  background-color: white;
-}
-#botRight:hover {
-  background-color: white;
-}
-#botRight:hover {
-  background-color: white;
-}
-#botRight:hover {
-  background-color: white;
-}
-#botRight:hover {
-  background-color: white;
+body{
+  margin:0px;
+  padding:0px;
 }
 
+.game td
+{
+  width:100px;
+  height:100px;
+  border: solid 5px black;
+  text-align:center;
+  font-size:40pt;
+  border-radius:10px;
+  box-sizing:border-box;
+}
+
+.game td:hover
+{
+  background-color: #fff;
+  cursor:pointer;
+}
+
+.game
+{
+  background:#efefef;
+  border:solid 10px #333;
+}
+
+.game .game-title
+{
+  background:#222;
+  color:#fff;
+  padding: 10px;
+  text-align:center;
+}
+
+.game .player
+{
+  float:left;
+  text-align:center;
+  width: 25%;
+}
+
+.game .player .selected
+{
+  border-bottom:solid 4px #00fa9a;
+}
+
+.tictactoe-board
+{
+  text-align:center;
+  margin:0 auto;
+  width:50%;
+  padding-top:20px;
+}
+
+.tictactoe-board table
+{
+  float:left;
+  width: 50%;
+}
+
+.tictactoe-board-score1
+{
+  float:left;
+  width:20%;
+}
+
+.tictactoe-board-score2
+{
+  float:left;
+  width:20%;
+}
+
+.clear
+{
+  clear:both;
+}
+  
